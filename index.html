@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h6>Please press the follow button</h6>
+    <div class="box">
+        <img src="team-4.jpg" alt="">
+        <div class="text-box">  
+            <h3>Steven </h3>
+            <p>The cat <br> popular</p>
+        </div>
+        <button id="follow" onclick="openPopup()">Follow</button> 
+    </div>
+    <div class="popp-up" id="popup" >
+        <h1>You have just followed successfull</h1>
+        <h5>Thank  you</h5>
+        <button class="close-btn" onclick="closePop()">Close</button>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+
+        }
+        function closePop() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
